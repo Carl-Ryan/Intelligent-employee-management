@@ -38,8 +38,23 @@ h1 {
     text-decoration: none;
     border-radius: 6px;
     transition: background-color 0.2s ease-in-out;
+    margin-bottom: 20px; /* 添加间距 */
 }
 
 .entry-button:hover {
     background-color: #0056b3;
+}
+
+.support-text {
+    color: #888;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* 间距 */
+}
+
+.feishu-logo {
+    width: 20px; /* 调整大小 */
+    height: 20px;
 }
