@@ -12,24 +12,29 @@ body {
 .container {
     text-align: center;
     background-color: #fff;
-    padding: 50px 30px;
-    border-radius: 10px;
+    padding: 70px 50px; /* 增大内边距 */
+    border-radius: 15px; /* 增大圆角 */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 34px;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* 增大间距 */
+}
+
+.version-text {
+    color: #666;
+    margin-bottom: 30px; /* 增大间距 */
 }
 
 .entry-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 24px; /* 增大内边距 */
     background-color: #007bff;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px; /* 增大圆角 */
     transition: background-color 0.2s ease-in-out;
 }
 
