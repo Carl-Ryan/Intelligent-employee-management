@@ -52,7 +52,7 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-top: 50px; /* 增加上边距，使其向下移动 */
+    margin-top: 40px; /* 增加上边距，使其向下移动 */
     margin-bottom: -40px;
 }
 
