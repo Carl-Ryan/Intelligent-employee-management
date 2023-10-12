@@ -12,29 +12,31 @@ body {
 .container {
     text-align: center;
     background-color: #fff;
-    padding: 70px 50px; /* 增大内边距 */
-    border-radius: 15px; /* 增大圆角 */
+    padding: 90px 120px; /* 更宽的内边距 */
+    border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 60%; /* 设置宽度以使其成为长方形 */
+    max-width: 800px; /* 限制最大宽度 */
 }
 
 h1 {
     font-size: 34px;
     color: #333;
-    margin-bottom: 30px; /* 增大间距 */
+    margin-bottom: 30px;
 }
 
 .version-text {
     color: #666;
-    margin-bottom: 30px; /* 增大间距 */
+    margin-bottom: 30px;
 }
 
 .entry-button {
     display: inline-block;
-    padding: 12px 24px; /* 增大内边距 */
+    padding: 12px 24px;
     background-color: #007bff;
     color: #fff;
     text-decoration: none;
-    border-radius: 6px; /* 增大圆角 */
+    border-radius: 6px;
     transition: background-color 0.2s ease-in-out;
 }
 
