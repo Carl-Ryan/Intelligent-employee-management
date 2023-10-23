@@ -24,32 +24,27 @@ h1 {
     color: #333;
     margin-bottom: 30px;
 }
-
 .version-text {
     color: #666;
-    margin-bottom: 30px;
+    margin-bottom: 20px; /* 缩小了间距 */
 }
-
-.button-row {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px; /* 为下一行的按钮添加额外的下边距 */
-}
-
 .entry-button {
+    display: inline-block;
     padding: 12px 24px;
     background-color: #007bff;
     color: #fff;
     text-decoration: none;
     border-radius: 6px;
     transition: background-color 0.2s ease-in-out;
-    margin: 10px; /* 为按钮添加上下左右的间距 */
+    margin-top: 5px;  /* 缩小了间距 */
+    margin-bottom: 5px;  /* 缩小了间距 */
 }
-
 .entry-button:hover {
     background-color: #0056b3;
 }
-
+.entry-button + .entry-button {
+    margin-left: 0; /* 移除了左边距，使其与上一个按钮对齐 */
+}
 .support-text {
     color: #888;
     font-size: 12px;
@@ -58,6 +53,7 @@ h1 {
     justify-content: center;
     gap: 10px;
     margin-top: 30px;
+    margin-bottom: -40px;
 }
 
 .feishu-logo {
