@@ -8,7 +8,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .container {
     text-align: center;
     background-color: #fff;
@@ -18,46 +17,42 @@ body {
     width: 40%;
     max-width: 600px;
 }
-
 h1 {
     font-size: 34px;
     color: #333;
     margin-bottom: 30px;
 }
-
 .version-text {
     color: #666;
     margin-bottom: 30px;
 }
-
-.button-row {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
 .entry-button {
+    display: inline-block;
     padding: 12px 24px;
     background-color: #007bff;
     color: #fff;
     text-decoration: none;
     border-radius: 6px;
     transition: background-color 0.2s ease-in-out;
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-
 .entry-button:hover {
     background-color: #0056b3;
 }
-
+.entry-button + .entry-button {
+    margin-left: 30px;
+}
 .support-text {
     color: #888;
     font-size: 12px;
+    display: flex;
+    align-items: center;
     justify-content: center;
     gap: 10px;
     margin-top: 30px;
+    margin-bottom: -40px;
 }
-
 .feishu-logo {
     width: 20px;
     height: 20px;
