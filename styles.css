@@ -43,17 +43,7 @@ h1 {
     text-decoration: none;
     border-radius: 6px;
     transition: background-color 0.2s ease-in-out;
-    margin: 10px; 
-    /* 设置一个固定宽度，确保第二行的“考勤系统”按钮与第一行的按钮一样宽 */
-    width: calc((100% - 40px) / 2); 
-}
-
-.entry-button:last-child {
-    margin-right: 0;
-}
-
-.entry-button:first-child {
-    margin-left: 0;
+    margin: 10px;
 }
 
 .entry-button:hover {
