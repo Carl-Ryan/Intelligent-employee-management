@@ -1,62 +1,55 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f8fa;
+    font-family: Arial, sans-serif; /* 使用Arial字体，如果不可用则使用无衬线字体 */
     margin: 0;
     padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .container {
-    text-align: center;
+    max-width: 600px; /* 容器的最大宽度 */
+    margin: 50px auto; /* 上下外边距为50px，左右自动对齐居中 */
+    text-align: center; /* 文字居中 */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
     background-color: #fff;
-    padding: 70px 80px;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 40%;
-    max-width: 600px;
 }
 
 h1 {
-    font-size: 34px;
-    color: #333;
-    margin-bottom: 30px;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
+
 .version-text {
-    color: #666;
-    margin-bottom: 20px; /* 缩小了间距 */
+    margin-bottom: 20px;
 }
+
+.button-row {
+    display: flex; /* 使用flex布局 */
+    justify-content: center; /* 使内容居中对齐 */
+    margin-bottom: 20px;
+}
+
 .entry-button {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: background-color 0.2s ease-in-out;
-    margin-top: 5px;  /* 缩小了间距 */
-    margin-bottom: 5px;  /* 缩小了间距 */
+    display: inline-block; /* 按钮显示为内联块级元素 */
+    padding: 10px 20px; /* 按钮内边距 */
+    margin: 0 10px; /* 按钮之间的间距 */
+    background-color: #007BFF; /* 按钮背景色 */
+    color: #fff; /* 文字颜色 */
+    text-decoration: none; /* 去除链接下划线 */
+    border-radius: 5px; /* 添加圆角 */
 }
+
 .entry-button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* 按钮悬停时的背景色 */
 }
-.entry-button + .entry-button {
-    margin-left: 0; /* 移除了左边距，使其与上一个按钮对齐 */
-}
+
 .support-text {
-    color: #888;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 30px;
-    margin-bottom: -40px;
+    display: flex; /* 使用flex布局 */
+    align-items: center; /* 使内容垂直居中对齐 */
+    justify-content: center; /* 使内容水平居中对齐 */
 }
 
 .feishu-logo {
-    width: 20px;
-    height: 20px;
+    width: 40px; /* 图片宽度 */
+    height: 40px; /* 图片高度 */
+    margin-right: 10px; /* 图片和文字之间的间距 */
 }
