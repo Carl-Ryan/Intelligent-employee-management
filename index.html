@@ -68,34 +68,35 @@
 
         /* 添加媒体查询以优化移动设备布局 */
         @media screen and (max-width: 768px) {
-            body {
-                padding: 20px; /* 添加上下边距 */
-                height: auto; /* 允许页面在移动设备上滚动 */
-                display: block; /* 使用标准流布局，而不是flex布局 */
-            }
-            .container {
-                width: 90%; /* 容器宽度为90%，以适应屏幕 */
-                max-width: none; /* 去除最大宽度限制 */
-                padding: 40px 20px; /* 减小内边距 */
-                margin: auto; /* 自动边距使其垂直居中 */
-                box-sizing: border-box; /* 添加box-sizing防止宽度计算错误 */
-            }
-            h1 {
-                font-size: 28px; /* 减小标题字号 */
-            }
-            .entry-button {
-                margin-top: 5px;
-                margin-bottom: 5px;
-                padding: 10px 18px; /* 调整按钮大小 */
-            }
-            .entry-button + .entry-button {
-                margin-left: 10px; /* 减小按钮之间的间距 */
-            }
-            .support-text {
-                margin-top: 20px;
-                margin-bottom: -20px; /* 调整底部文本的上下边距 */
-            }
-        }
+    body {
+        height: auto; /* 允许页面在移动设备上滚动 */
+        display: flex; /* 使用flex布局 */
+        justify-content: center; /* 水平居中 */
+        align-items: center; /* 垂直居中 */
+        padding: 20px; /* 添加一些内边距 */
+        min-height: 100vh; /* 最小高度为视窗的高度 */
+    }
+    .container {
+        width: 90%; /* 容器宽度为90%，以适应屏幕 */
+        max-width: none; /* 去除最大宽度限制 */
+        padding: 40px 20px; /* 减小内边距 */
+    }
+    h1 {
+        font-size: 28px; /* 减小标题字号 */
+    }
+    .entry-button {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 10px 18px; /* 调整按钮大小 */
+    }
+    .entry-button + .entry-button {
+        margin-left: 10px; /* 减小按钮之间的间距 */
+    }
+    .support-text {
+        margin-top: 20px;
+        margin-bottom: -20px; /* 调整底部文本的上下边距 */
+    }
+}
     </style>
 </head>
 <body>
