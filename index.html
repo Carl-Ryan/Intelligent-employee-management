@@ -69,12 +69,16 @@
         /* 添加媒体查询以优化移动设备布局 */
         @media screen and (max-width: 768px) {
             body {
+                padding: 20px; /* 添加上下边距 */
                 height: auto; /* 允许页面在移动设备上滚动 */
+                display: block; /* 使用标准流布局，而不是flex布局 */
             }
             .container {
                 width: 90%; /* 容器宽度为90%，以适应屏幕 */
                 max-width: none; /* 去除最大宽度限制 */
                 padding: 40px 20px; /* 减小内边距 */
+                margin: auto; /* 自动边距使其垂直居中 */
+                box-sizing: border-box; /* 添加box-sizing防止宽度计算错误 */
             }
             h1 {
                 font-size: 28px; /* 减小标题字号 */
