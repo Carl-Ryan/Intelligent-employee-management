@@ -67,16 +67,17 @@
         }
 
         /* 添加媒体查询以优化移动设备布局 */
-        @media screen and (max-width: 768px) {
+       @media screen and (max-width: 768px) {
             body {
                 height: auto; /* 允许页面在移动设备上滚动 */
                 display: flex;
                 justify-content: center;
-                align-items: center;
-                padding: 10% 20px 20px 20px; /* 减少顶部的内边距 */
+                align-items: flex-start; /* 调整为顶部对齐 */
+                padding-top: 0; /* 移除顶部内边距 */
                 min-height: 100vh;
             }
             .container {
+                margin-top: -10vh; /* 向上移动容器 */
                 width: 90%; /* 容器宽度为90%，以适应屏幕 */
                 max-width: none;
                 padding: 40px 20px;
